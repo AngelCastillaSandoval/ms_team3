@@ -15,7 +15,7 @@ public class IssueService {
     private final IssueRepository issueRepository;
     private final KafkaProducerService kafkaProducer;
 
-    public IssueService(IssueRepository issueRepository, kafkaProducerService kafkaProducer) {
+    public IssueService(IssueRepository issueRepository, KafkaProducerService kafkaProducer) {
         this.issueRepository = issueRepository;
         this.kafkaProducer = kafkaProducer;
     }
