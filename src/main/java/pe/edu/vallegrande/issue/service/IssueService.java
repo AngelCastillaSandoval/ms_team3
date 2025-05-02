@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 @Slf4j
 public class IssueService {
     private final IssueRepository issueRepository;
-    private final kafkaProducerService kafkaProducer;
+    private final KafkaProducerService kafkaProducer;
 
     public IssueService(IssueRepository issueRepository, kafkaProducerService kafkaProducer) {
         this.issueRepository = issueRepository;
